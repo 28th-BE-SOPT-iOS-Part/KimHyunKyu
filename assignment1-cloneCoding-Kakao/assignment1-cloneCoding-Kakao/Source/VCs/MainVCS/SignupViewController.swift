@@ -24,12 +24,6 @@ class SignupViewController: UIViewController {
 //MARK: - @IBAction
     
     @IBAction func signupBtnClicked(_ sender: Any) {
-        if idTextField.text?.isEmpty == false && pwdTextField.text?.isEmpty == false && rePwdTextField.text?.isEmpty == false {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "CompleteViewController") as? CompleteViewController else {
-                return
-            }
-            nextVC.label = idTextField.text
-            self.present(nextVC, animated: true, completion: nil)
-        }
+        print("click signupBtn")
     }
 }

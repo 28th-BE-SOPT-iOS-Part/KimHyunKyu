@@ -9,20 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-//MARK: - @IBOutlet
+//MARK: - @IBOutlet Properties
     
     
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwdTextField: UITextField!
     
-//MARK: - override func
+//MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-//MARK: - @IBAction
+//MARK: - @IBAction Properties
     
     @IBAction func signupBtnClicked(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(identifier: "SignupViewController") as? SignupViewController else {
@@ -33,11 +33,10 @@ class ViewController: UIViewController {
     
     @IBAction func loginBtnClicked(_ sender: Any) {
         if idTextField.text?.isEmpty == false && pwdTextField.text?.isEmpty == false {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "CompleteViewController") as? CompleteViewController else {
+            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBar") as? UITabBarController else {
                 return
             }
-            nextVC.label = idTextField.text
-            self.present(nextVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }
 }
