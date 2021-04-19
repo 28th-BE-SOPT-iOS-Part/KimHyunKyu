@@ -9,15 +9,10 @@ import UIKit
 
 class FirstTabVC: UIViewController {
     
-    //MARK: - @IBOutlet Properties
-    
-    
     //MARK: - View Life Cycle
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()        
     }
     
     //MARK: - @IBAction Properties
@@ -31,6 +26,5 @@ class FirstTabVC: UIViewController {
         nextVC.modalTransitionStyle = .coverVertical
         self.present(nextVC, animated: true, completion: nil)
     }
-    
 }
 
