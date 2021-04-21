@@ -22,8 +22,10 @@ class FirstTabVC: UIViewController {
         guard let nextVC = myTabVC.instantiateViewController(identifier: "MyTabVC") as? MyTabVC else {
             return
         }
-        nextVC.modalPresentationStyle = .fullScreen
+        //overFullScreen, overCurrentContext 는 반투명도를 조절해서 뒤의 view 를 볼 수 있다.
+        nextVC.modalPresentationStyle = .overFullScreen
         nextVC.modalTransitionStyle = .coverVertical
+        nextVC.view.alpha = 1
         self.present(nextVC, animated: true, completion: nil)
     }
 }
