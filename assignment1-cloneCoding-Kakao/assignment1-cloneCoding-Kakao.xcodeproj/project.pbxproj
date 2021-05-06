@@ -12,6 +12,8 @@
 		F846E6C12642C2140084049E /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6C02642C2140084049E /* FriendDataModel.swift */; };
 		F846E6C42642D3320084049E /* MyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6C22642D3320084049E /* MyProfileCell.swift */; };
 		F846E6C52642D3320084049E /* MyProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F846E6C32642D3320084049E /* MyProfileCell.xib */; };
+		F846E6E92643DB220084049E /* FifthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6E82643DB220084049E /* FifthCollectionCell.swift */; };
+		F846E6EB2643DC840084049E /* FifthMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */; };
 		F89E91B9262AD5F6004124B2 /* FirstTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91B8262AD5F6004124B2 /* FirstTab.storyboard */; };
 		F89E91BC262AD5FE004124B2 /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91BB262AD5FE004124B2 /* SecondTab.storyboard */; };
 		F89E91BF262AD609004124B2 /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91BE262AD609004124B2 /* ThirdTab.storyboard */; };
@@ -39,6 +41,8 @@
 		F846E6C02642C2140084049E /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 		F846E6C22642D3320084049E /* MyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCell.swift; sourceTree = "<group>"; };
 		F846E6C32642D3320084049E /* MyProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileCell.xib; sourceTree = "<group>"; };
+		F846E6E82643DB220084049E /* FifthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthCollectionCell.swift; sourceTree = "<group>"; };
+		F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthMenuDataModel.swift; sourceTree = "<group>"; };
 		F89E91B8262AD5F6004124B2 /* FirstTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstTab.storyboard; sourceTree = "<group>"; };
 		F89E91BB262AD5FE004124B2 /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		F89E91BE262AD609004124B2 /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		F846E6B72642AB400084049E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F846E6E82643DB220084049E /* FifthCollectionCell.swift */,
 				F846E6B82642AB5A0084049E /* FriendCell.swift */,
 				F846E6B92642AB5A0084049E /* FriendCell.xib */,
 				F846E6C22642D3320084049E /* MyProfileCell.swift */,
@@ -84,11 +89,20 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F846E6EC2643DCBF0084049E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */,
+				F846E6C02642C2140084049E /* FriendDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F89E91B3262AAE26004124B2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F846E6EC2643DCBF0084049E /* Models */,
 				F89E91B5262AAE57004124B2 /* VCs */,
-				F846E6C02642C2140084049E /* FriendDataModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -266,8 +280,10 @@
 				F846E6BA2642AB5A0084049E /* FriendCell.swift in Sources */,
 				F8D3582D2618BC9D00655B7B /* ViewController.swift in Sources */,
 				F846E6C12642C2140084049E /* FriendDataModel.swift in Sources */,
+				F846E6E92643DB220084049E /* FifthCollectionCell.swift in Sources */,
 				F89E91C8262ADB44004124B2 /* FirstTabVC.swift in Sources */,
 				F846E6C42642D3320084049E /* MyProfileCell.swift in Sources */,
+				F846E6EB2643DC840084049E /* FifthMenuDataModel.swift in Sources */,
 				F89E91D4262ADB7C004124B2 /* FifthTabVC.swift in Sources */,
 				F8D358292618BC9D00655B7B /* AppDelegate.swift in Sources */,
 				F89E91D1262ADB69004124B2 /* FourthTabVC.swift in Sources */,
