@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eLw-Gy-QA4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eLw-Gy-QA4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -76,7 +76,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UR2-td-pHl"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.51289222801219114" green="0.51469501539045659" blue="0.5201033775252526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UR2-td-pHl" firstAttribute="bottom" secondItem="Tmq-P8-V1S" secondAttribute="bottom" constant="14" id="7mm-8U-LXz"/>
                             <constraint firstItem="Uxz-7j-bxn" firstAttribute="top" secondItem="UR2-td-pHl" secondAttribute="top" constant="14" id="7qa-gG-Bwx"/>
@@ -92,6 +92,10 @@
                             <constraint firstItem="ahd-Re-qJU" firstAttribute="centerX" secondItem="Iof-AD-Y0f" secondAttribute="centerX" id="pkh-SU-t4j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="ViD-6k-plh" id="zEX-fX-auH"/>
+                        <outlet property="profileImageView" destination="ahd-Re-qJU" id="dCC-w8-qcA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZK-GH-eWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
