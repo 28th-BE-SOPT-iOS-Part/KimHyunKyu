@@ -151,13 +151,21 @@ extension FirstTabVC: UITableViewDelegate {
         guard let vc = storyboard.instantiateViewController(identifier: "MyTabVC") as? MyTabVC else {
             return UIContextMenuConfiguration()
         }
-        vc.name = friendList[indexPath.row].name
-        vc.profileImage = friendList[indexPath.row].image
-        
-        
+
+        if indexPath.row == 0 {
+            vc.name = myProfile.name
+            vc.profileImage = myProfile.image
+        } else {
+            vc.name = friendList[indexPath.row-1].name
+            vc.profileImage = friendList[indexPath.row-1].image
+        }
+
         return UIContextMenuConfiguration(identifier: nil, previewProvider: { return vc }) { _ in
             UIMenu(title: "", children: [chat, voiceTalk, faceTalk, gift])
         }
+//        return UIContextMenuConfiguration(identifier: nil, previewProvider: makeContextMenu) { _ in
+//            UIMenu(title: "", children: [chat, voiceTalk, faceTalk, gift])
+//        }
     }
 }
 
