@@ -40,8 +40,8 @@ class MyTabVC: UIViewController {
     //MARK: - Methods
     
     private func setUI() {
-//        profileImageView.image =
-//        nameLabel.text =
+        profileImageView.image = UIImage(named: profileImage)
+        nameLabel.text = name
     }
     
     @objc func handleDismiss(sender: UIPanGestureRecognizer) {
