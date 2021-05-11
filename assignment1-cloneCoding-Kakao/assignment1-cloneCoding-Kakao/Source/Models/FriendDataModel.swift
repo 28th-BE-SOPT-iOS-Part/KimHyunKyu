@@ -10,7 +10,7 @@ import UIKit
 
 struct FriendDataModel
 {
-    var image : UIImage
+    var image : String
     var name : String
     var state: String
     
@@ -18,14 +18,7 @@ struct FriendDataModel
          name : String,
          state: String)
     {
-        if let image = UIImage(named: imageName)
-        {
-            self.image = image
-        }
-        else
-        {
-            self.image = UIImage()
-        }
+        self.image = imageName
         self.name = name
         self.state = state
     }

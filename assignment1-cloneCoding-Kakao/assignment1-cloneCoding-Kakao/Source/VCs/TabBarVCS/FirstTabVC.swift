@@ -10,6 +10,9 @@ import UIKit
 class FirstTabVC: UIViewController {
     
     //MARK: - Properties
+    //for contextMenu
+    var imageName = ""
+    var name = ""
     
     private var friendList:[FriendDataModel] = []
     private var myProfile:FriendDataModel = FriendDataModel(imageName: "friendtabProfileImg", name: "김솝트", state: "상태메시지는 여기에")
@@ -92,6 +95,17 @@ class FirstTabVC: UIViewController {
         let friendCell = UINib(nibName: "FriendCell", bundle: nil)
         tableView.register(friendCell, forCellReuseIdentifier: FriendCell.identifier)
     }
+    
+//    func makeContextMenu() -> UIViewController {
+//        let storyboard = UIStoryboard(name: "MyTab", bundle: nil)
+//        guard let vc = storyboard.instantiateViewController(identifier: "MyTabVC") as? MyTabVC else {
+//            return UIViewController()
+//        }
+//        vc.name = name
+//        vc.profileImage = imageName
+//
+//        return vc
+//    }
 }
 
 //MARK: - UITableViewDelegates
@@ -108,10 +122,10 @@ extension FirstTabVC: UITableViewDelegate {
         
         if indexPath.row == 0 {
             nextVC.nameLabel.text = myProfile.name
-            nextVC.profileImageView.image = myProfile.image
+            nextVC.profileImageView.image = UIImage(named: myProfile.image)
         } else {
             nextVC.nameLabel.text = friendList[indexPath.row-1].name
-            nextVC.profileImageView.image = friendList[indexPath.row-1].image
+            nextVC.profileImageView.image = UIImage(named: friendList[indexPath.row-1].image)
         }
         
         self.present(nextVC, animated: true, completion: nil)
@@ -122,6 +136,27 @@ extension FirstTabVC: UITableViewDelegate {
             return 73
         } else {
             return 50
+        }
+    }
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        let chat = UIAction(title: "채팅하기") { _ in }
+        let voiceTalk = UIAction(title: "보이스톡") { _ in }
+        let faceTalk = UIAction(title: "페이스톡") { _ in }
+        let gift = UIAction(title: "선물하기") { _ in }
+        
+//        self.imageName = friendList[indexPath.row].image
+//        self.name = friendList[indexPath.row].name
+        
+        let storyboard = UIStoryboard(name: "MyTab", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "MyTabVC") as? MyTabVC else {
+            return UIContextMenuConfiguration()
+        }
+        vc.name = friendList[indexPath.row].name
+        vc.profileImage = friendList[indexPath.row].image
+        
+        
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: { return vc }) { _ in
+            UIMenu(title: "", children: [chat, voiceTalk, faceTalk, gift])
         }
     }
 }

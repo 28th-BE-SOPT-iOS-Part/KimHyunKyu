@@ -30,10 +30,17 @@ class MyProfileCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setData(image: UIImage,
+    func setData(image: String,
                 name: String,
                 state: String) {
-        profileImage.image = image
+        if let image = UIImage(named: image)
+        {
+            self.profileImage.image = image
+        }
+        else
+        {
+            self.profileImage.image = UIImage()
+        }
         nameLabel.text = name
         stateLabel.text = state
     }
