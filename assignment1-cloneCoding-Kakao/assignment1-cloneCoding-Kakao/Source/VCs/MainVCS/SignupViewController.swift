@@ -24,6 +24,22 @@ class SignupViewController: UIViewController {
 //MARK: - @IBAction
     
     @IBAction func signupBtnClicked(_ sender: Any) {
-        print("click signupBtn")
+        SignupService.shared.Signup(email: idTextField.text!, password: pwdTextField.text!) { result in
+            switch result {
+            case .success(let message):
+                if let message = message as? String {
+                    self.makeAlert(title: "알림", message: message, okAction: { _ in
+                        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBar") as? UITabBarController else {
+                            return
+                        }
+                        self.navigationController?.pushViewController(nextVC, animated: true)
+                    })
+                }
+            case .requestErr(let message):
+                self.makeAlert(title: "알림", message: message as! String)
+            default :
+                print("error")
+            }
+        }
     }
 }

@@ -32,11 +32,29 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginBtnClicked(_ sender: Any) {
-        if idTextField.text?.isEmpty == false && pwdTextField.text?.isEmpty == false {
-            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBar") as? UITabBarController else {
-                return
+//        if idTextField.text?.isEmpty == false && pwdTextField.text?.isEmpty == false {
+//            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBar") as? UITabBarController else {
+//                return
+//            }
+//            self.navigationController?.pushViewController(nextVC, animated: true)
+//        }
+        
+        LoginService.shared.login(email: self.idTextField.text!, password: pwdTextField.text!) { result in
+            switch result {
+            case .success(let message):
+                if let message = message as? String {
+                    self.makeAlert(title: "알림", message: message, okAction: { _ in
+                        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TabBar") as? UITabBarController else {
+                            return
+                        }
+                        self.navigationController?.pushViewController(nextVC, animated: true)
+                    })
+                }
+            case .requestErr(let message):
+                self.makeAlert(title: "알림", message: message as! String)
+            default :
+                print("error")
             }
-            self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }
 }

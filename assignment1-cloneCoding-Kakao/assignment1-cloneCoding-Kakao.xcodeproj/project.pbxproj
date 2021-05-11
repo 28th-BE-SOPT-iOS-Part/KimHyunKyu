@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930011FD3BDE7A82D5740169 /* Pods_assignment1_cloneCoding_Kakao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90444ED1323870E974BCDCD /* Pods_assignment1_cloneCoding_Kakao.framework */; };
 		F846E6BA2642AB5A0084049E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6B82642AB5A0084049E /* FriendCell.swift */; };
 		F846E6BB2642AB5A0084049E /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F846E6B92642AB5A0084049E /* FriendCell.xib */; };
 		F846E6C12642C2140084049E /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6C02642C2140084049E /* FriendDataModel.swift */; };
@@ -14,6 +15,13 @@
 		F846E6C52642D3320084049E /* MyProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F846E6C32642D3320084049E /* MyProfileCell.xib */; };
 		F846E6E92643DB220084049E /* FifthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6E82643DB220084049E /* FifthCollectionCell.swift */; };
 		F846E6EB2643DC840084049E /* FifthMenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */; };
+		F84DF6F6264A96E600F0DC33 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6F5264A96E600F0DC33 /* NetworkResult.swift */; };
+		F84DF6F8264A977200F0DC33 /* SignupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6F7264A977200F0DC33 /* SignupDataModel.swift */; };
+		F84DF6FA264A982000F0DC33 /* SigupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6F9264A982000F0DC33 /* SigupService.swift */; };
+		F84DF6FC264A983900F0DC33 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6FB264A983900F0DC33 /* LoginService.swift */; };
+		F84DF6FE264A985100F0DC33 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6FD264A985100F0DC33 /* LoginDataModel.swift */; };
+		F84DF700264A9C0100F0DC33 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF6FF264A9C0100F0DC33 /* APIConstants.swift */; };
+		F84DF703264AA9CE00F0DC33 /* UIViewController+makeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DF702264AA9CE00F0DC33 /* UIViewController+makeAlert.swift */; };
 		F89E91B9262AD5F6004124B2 /* FirstTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91B8262AD5F6004124B2 /* FirstTab.storyboard */; };
 		F89E91BC262AD5FE004124B2 /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91BB262AD5FE004124B2 /* SecondTab.storyboard */; };
 		F89E91BF262AD609004124B2 /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89E91BE262AD609004124B2 /* ThirdTab.storyboard */; };
@@ -36,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF4B8A1031732929A32571DE /* Pods-assignment1-cloneCoding-Kakao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment1-cloneCoding-Kakao.debug.xcconfig"; path = "Target Support Files/Pods-assignment1-cloneCoding-Kakao/Pods-assignment1-cloneCoding-Kakao.debug.xcconfig"; sourceTree = "<group>"; };
+		E90444ED1323870E974BCDCD /* Pods_assignment1_cloneCoding_Kakao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment1_cloneCoding_Kakao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F846E6B82642AB5A0084049E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		F846E6B92642AB5A0084049E /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		F846E6C02642C2140084049E /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
@@ -43,6 +53,13 @@
 		F846E6C32642D3320084049E /* MyProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileCell.xib; sourceTree = "<group>"; };
 		F846E6E82643DB220084049E /* FifthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthCollectionCell.swift; sourceTree = "<group>"; };
 		F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthMenuDataModel.swift; sourceTree = "<group>"; };
+		F84DF6F5264A96E600F0DC33 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F84DF6F7264A977200F0DC33 /* SignupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataModel.swift; sourceTree = "<group>"; };
+		F84DF6F9264A982000F0DC33 /* SigupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigupService.swift; sourceTree = "<group>"; };
+		F84DF6FB264A983900F0DC33 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		F84DF6FD264A985100F0DC33 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		F84DF6FF264A9C0100F0DC33 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F84DF702264AA9CE00F0DC33 /* UIViewController+makeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+makeAlert.swift"; sourceTree = "<group>"; };
 		F89E91B8262AD5F6004124B2 /* FirstTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstTab.storyboard; sourceTree = "<group>"; };
 		F89E91BB262AD5FE004124B2 /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		F89E91BE262AD609004124B2 /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
@@ -64,6 +81,7 @@
 		F8D358342618BC9E00655B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8D358362618BC9E00655B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D358432618BEAF00655B7B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FE77575AC5AA42F5A1D4D79D /* Pods-assignment1-cloneCoding-Kakao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment1-cloneCoding-Kakao.release.xcconfig"; path = "Target Support Files/Pods-assignment1-cloneCoding-Kakao/Pods-assignment1-cloneCoding-Kakao.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +89,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930011FD3BDE7A82D5740169 /* Pods_assignment1_cloneCoding_Kakao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB093A999F9431BB4D30D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E90444ED1323870E974BCDCD /* Pods_assignment1_cloneCoding_Kakao.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5004097EEF545423B766656B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF4B8A1031732929A32571DE /* Pods-assignment1-cloneCoding-Kakao.debug.xcconfig */,
+				FE77575AC5AA42F5A1D4D79D /* Pods-assignment1-cloneCoding-Kakao.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F846E6B72642AB400084049E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +130,37 @@
 			children = (
 				F846E6EA2643DC840084049E /* FifthMenuDataModel.swift */,
 				F846E6C02642C2140084049E /* FriendDataModel.swift */,
+				F84DF6F7264A977200F0DC33 /* SignupDataModel.swift */,
+				F84DF6FD264A985100F0DC33 /* LoginDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F84DF6F4264A96B600F0DC33 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F84DF6F5264A96E600F0DC33 /* NetworkResult.swift */,
+				F84DF6F9264A982000F0DC33 /* SigupService.swift */,
+				F84DF6FB264A983900F0DC33 /* LoginService.swift */,
+				F84DF6FF264A9C0100F0DC33 /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F84DF701264AA99400F0DC33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F84DF702264AA9CE00F0DC33 /* UIViewController+makeAlert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F89E91B3262AAE26004124B2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F84DF701264AA99400F0DC33 /* Extensions */,
+				F84DF6F4264A96B600F0DC33 /* Network */,
+				F846E6B72642AB400084049E /* Cells */,
 				F846E6EC2643DCBF0084049E /* Models */,
 				F89E91B5262AAE57004124B2 /* VCs */,
 			);
@@ -130,7 +190,6 @@
 		F89E91B6262AAE65004124B2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F846E6B72642AB400084049E /* Cells */,
 				F89E91D9262AEB2A004124B2 /* TabBarStoryboards */,
 				F8D3582E2618BC9D00655B7B /* Main.storyboard */,
 				F8D358332618BC9E00655B7B /* LaunchScreen.storyboard */,
@@ -178,6 +237,8 @@
 			children = (
 				F8D358272618BC9D00655B7B /* assignment1-cloneCoding-Kakao */,
 				F8D358262618BC9D00655B7B /* Products */,
+				5004097EEF545423B766656B /* Pods */,
+				4EB093A999F9431BB4D30D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8D358392618BC9E00655B7B /* Build configuration list for PBXNativeTarget "assignment1-cloneCoding-Kakao" */;
 			buildPhases = (
+				2272651CA83C4933ADFA5CAC /* [CP] Check Pods Manifest.lock */,
 				F8D358212618BC9D00655B7B /* Sources */,
 				F8D358222618BC9D00655B7B /* Frameworks */,
 				F8D358232618BC9D00655B7B /* Resources */,
+				80CCBAA50E66E52DF3A46DAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,26 +335,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2272651CA83C4933ADFA5CAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-assignment1-cloneCoding-Kakao-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CCBAA50E66E52DF3A46DAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-assignment1-cloneCoding-Kakao/Pods-assignment1-cloneCoding-Kakao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-assignment1-cloneCoding-Kakao/Pods-assignment1-cloneCoding-Kakao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-assignment1-cloneCoding-Kakao/Pods-assignment1-cloneCoding-Kakao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8D358212618BC9D00655B7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84DF6FC264A983900F0DC33 /* LoginService.swift in Sources */,
+				F84DF6FA264A982000F0DC33 /* SigupService.swift in Sources */,
 				F846E6BA2642AB5A0084049E /* FriendCell.swift in Sources */,
+				F84DF6F8264A977200F0DC33 /* SignupDataModel.swift in Sources */,
 				F8D3582D2618BC9D00655B7B /* ViewController.swift in Sources */,
 				F846E6C12642C2140084049E /* FriendDataModel.swift in Sources */,
 				F846E6E92643DB220084049E /* FifthCollectionCell.swift in Sources */,
 				F89E91C8262ADB44004124B2 /* FirstTabVC.swift in Sources */,
+				F84DF700264A9C0100F0DC33 /* APIConstants.swift in Sources */,
 				F846E6C42642D3320084049E /* MyProfileCell.swift in Sources */,
 				F846E6EB2643DC840084049E /* FifthMenuDataModel.swift in Sources */,
+				F84DF6F6264A96E600F0DC33 /* NetworkResult.swift in Sources */,
 				F89E91D4262ADB7C004124B2 /* FifthTabVC.swift in Sources */,
 				F8D358292618BC9D00655B7B /* AppDelegate.swift in Sources */,
+				F84DF703264AA9CE00F0DC33 /* UIViewController+makeAlert.swift in Sources */,
 				F89E91D1262ADB69004124B2 /* FourthTabVC.swift in Sources */,
 				F8D358442618BEAF00655B7B /* SignupViewController.swift in Sources */,
 				F89E91E3262B0A8D004124B2 /* MyTabVC.swift in Sources */,
 				F89E91CB262ADB4F004124B2 /* SecondTabVC.swift in Sources */,
 				F89E91CE262ADB5B004124B2 /* ThirdTabVC.swift in Sources */,
 				F8D3582B2618BC9D00655B7B /* SceneDelegate.swift in Sources */,
+				F84DF6FE264A985100F0DC33 /* LoginDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +547,7 @@
 		};
 		F8D3583A2618BC9E00655B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4B8A1031732929A32571DE /* Pods-assignment1-cloneCoding-Kakao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +567,7 @@
 		};
 		F8D3583B2618BC9E00655B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE77575AC5AA42F5A1D4D79D /* Pods-assignment1-cloneCoding-Kakao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
